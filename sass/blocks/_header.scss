@@ -89,7 +89,7 @@
             transform: translateX(100%);
         }
 
-        &__list,
+        .list,
         &__right-btn {
             display: none;
         }
@@ -124,7 +124,7 @@
                 align-items: left;
                 text-align: left;
 
-                a {
+                .button1 {
                     color: white;
                     margin-left: 35px;
                     width: 100px;

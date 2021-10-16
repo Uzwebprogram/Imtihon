@@ -240,7 +240,7 @@ body {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  .header__list, .header__right-btn {
+  .header .list, .header__right-btn {
     display: none;
   }
   .header-open {
@@ -282,7 +282,7 @@ body {
             align-items: left;
     text-align: left;
   }
-  .header-open ul li a {
+  .header-open ul li .button1 {
     color: white;
     margin-left: 35px;
     width: 100px;
@@ -315,7 +315,7 @@ body {
   letter-spacing: -2.5px;
 }
 
-.hero__text {
+.hero__padding {
   font-family: "Lexend Deca", "Arial", sans-serif;
   position: relative;
   font-size: 15px;
@@ -327,7 +327,7 @@ body {
   margin-bottom: 30px;
 }
 
-.hero__text::before {
+.hero__padding::before {
   content: "";
   background-image: url(../img/hero-left-img.svg);
   background-size: 550px 15px;
@@ -339,7 +339,7 @@ body {
   top: 40px;
 }
 
-.hero__text::after {
+.hero__padding::after {
   content: "";
   background-image: url(../img/hero-right-img.svg);
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@ body {
             justify-content: center;
     text-align: center;
   }
-  .hero__text {
+  .hero__padding {
     font-family: "Lexend Deca", "Arial", sans-serif;
     text-align: center;
     position: relative;
@@ -391,10 +391,10 @@ body {
     letter-spacing: 0.7px;
     margin-bottom: 30px;
   }
-  .hero__text::before {
+  .hero__padding::before {
     display: none;
   }
-  .hero__text::after {
+  .hero__padding::after {
     content: "";
     background-image: url(../img/hero-right-img.svg);
     background-repeat: no-repeat;
@@ -432,7 +432,7 @@ body {
             justify-content: center;
     text-align: center;
   }
-  .hero__text {
+  .hero__padding {
     font-family: "Lexend Deca", "Arial", sans-serif;
     text-align: center;
     font-size: 15px;
@@ -444,10 +444,10 @@ body {
     margin-bottom: 30px;
     margin-left: 15px;
   }
-  .hero__text::before {
+  .hero__padding::before {
     display: none;
   }
-  .hero__text::after {
+  .hero__padding::after {
     content: "";
     background-image: url(../img/hero-right-img.svg);
     background-repeat: no-repeat;
