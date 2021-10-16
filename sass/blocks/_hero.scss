@@ -1,0 +1,154 @@
+.hero {
+    background-image: url(./../img/header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    padding: 50px 2px 130px 5px;
+    color: white;
+
+    &__heading {
+        font-weight: bold;
+        font-family: "Space Mono", "Arial", sans-serif;
+        font-size: 56px;
+        max-width: 500px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+    }
+
+    &__text {
+        font-family: "Lexend Deca", "Arial", sans-serif;
+        position: relative;
+        font-size: 15px;
+        max-width: 405px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.7px;
+        text-align: left;
+        margin-bottom: 30px;
+
+        &::before {
+            content: "";
+            background-image: url(../img/hero-left-img.svg);
+            background-size: 550px 15px;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 400px;
+            height: 15px;
+            left: -105%;
+            top: 40px;
+        }
+
+        &::after {
+            content: "";
+            background-image: url(../img/hero-right-img.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 460px;
+            height: 150px;
+            left: 105%;
+            top: 38px;
+        }
+    }
+
+    &__item {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("./../img/hero-mobile.png");
+        background-size: cover;
+        padding-bottom: 200px;
+
+        &__heading {
+            text-align: center;
+        }
+
+        &__item {
+            margin: 0;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__text {
+            font-family: "Lexend Deca", "Arial", sans-serif;
+            text-align: center;
+            position: relative;
+            font-size: 15px;
+            max-width: 447px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.7px;
+            margin-bottom: 30px;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: "";
+                background-image: url(../img/hero-right-img.svg);
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 467px;
+                height: 150px;
+                left: -247px;
+                top: 200px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("./../img/hero-tablet.png");
+        background-size: cover;
+        padding-bottom: 200px;
+
+        &__heading {
+            text-align: center;
+        }
+
+        &__item {
+            margin: 0;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__text {
+            font-family: "Lexend Deca", "Arial", sans-serif;
+            text-align: center;
+            font-size: 15px;
+            max-width: 447px;
+            font-weight: 400;
+            line-height: 25px;
+            position: relative;
+            letter-spacing: 0.7px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: "";
+                background-image: url(../img/hero-right-img.svg);
+                background-repeat: no-repeat;
+                width: 457px;
+                height: 150px;
+                left: -317px;
+                top: 200px;
+            }
+        }
+    }
+}
+

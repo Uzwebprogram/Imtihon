@@ -1,0 +1,141 @@
+section {
+    position: relative;
+    overflow: hidden;
+
+    .guy__text {
+        max-width: 445px;
+    }
+
+    .guy {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+
+            & .guy__left {
+                margin-right: 0;
+            }
+        }
+
+        & h2 {
+            font-size: 48px;
+            line-height: 48px;
+            font-weight: 700;
+            color: $main-dark;
+        }
+        & p {
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 400;
+            color: #939CAA;
+            padding: 24px 0 40px 0;
+        }
+    }
+    .guy__left {
+        margin-left: 230px;
+        z-index: 1;
+
+        & img {
+            border-radius: 50%;
+            width: 445px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .guy__btn button {
+        border: none;
+        padding: 14px 44px;
+        background-color: $main-yellow;
+        color: $main-white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $main-white;
+            color: $main-yellow;
+            box-shadow: 0px 0px 0px 3px rgba(252, 183, 43, 0.75);
+            background-color: inherit;
+        }
+    }
+    .section__guy--img {
+        position: absolute;
+        left: 1170px;
+        z-index: -1;
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        background-color: #E5ECF4;
+        background-repeat: no-repeat;
+    }
+
+    .section__koshelok--img {
+        position: absolute;
+        left: 1170px;
+        z-index: -1;
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        background-color: #E5ECF4;
+        background-repeat: no-repeat;
+    }
+
+    .strell__img img {
+        background-repeat: no-repeat;
+        z-index: 2;
+        right: -150px;
+        top: 300px;
+        position: absolute;
+
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .guy {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .guy__left {
+            margin: 0;
+        }
+
+        .guy__text {
+            max-width: 573px;
+
+            & h2 {
+                margin: 56px 0 40px 0;
+            }
+            & p {
+                margin-bottom: 40px;
+            }
+        }
+        .strell__img {
+            & img {
+                z-index: 2;
+                right: 0;
+                bottom: 420px;
+                position: absolute;
+            }
+        }
+    }
+    @media only screen and (max-width: 375px) {
+        .strell__img {
+            & img {
+                &:not(:last-child) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    top: 182px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

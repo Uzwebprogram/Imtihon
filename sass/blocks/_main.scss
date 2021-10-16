@@ -1,0 +1,193 @@
+.main {
+    max-width: 1275px;
+
+    &__boxes {
+        display: flex;
+    }
+    &__box {
+        max-width: 598px;
+
+        &::before{
+            content: "";
+            display: block;
+            background-image: url(./../img/tel.png);
+            background-repeat: no-repeat;
+            background-size: 38px;
+            background-position: center;
+            width: 96px;
+            height: 96px;
+            margin-top: -60px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            padding-left: 96px;
+            background-color: $main-yellow;
+        }
+    }
+    &__box2 {
+        max-width: 598px;
+
+        &::before{
+            content: "";
+            display: block;
+            background-image: url(./../img/Shape.png);
+            background-repeat: no-repeat;
+            background-size: 42px;
+            background-position: center;
+            width: 96px;
+            height: 96px;
+            margin-top: -60px;
+            margin-bottom: 40px;
+            border-radius: 50%;
+            padding-left: 96px;
+            background-color: $main-yellow;
+        }
+    }
+    &__box3 {
+        max-width: 598px;
+
+        &::before{
+            content: "";
+            display: block;
+            background-image: url(./../img/matatsikil.png);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position: center;
+            max-width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            margin-top: -60px;
+            margin-bottom: 40px;
+            padding-left: 96px;
+            background-color: $main-yellow
+        }
+    }
+    &__tittle {
+        margin: 0;
+        margin-bottom: 27px;
+        max-width: 310px;
+        font-family: 'Space Mono', 'Arial' sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: black;
+    }
+    &__line {
+        background-color: $main-light-grey;
+        border: 10px solid $main-light-grey;
+        width: 1000px;
+        margin-left: -200px;
+        margin-top: 100px;
+    }
+    
+    &__text {
+        font-family: 'Lexend Deca', 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: $main-navy;
+    }
+}
+
+@media only screen and (max-width:768px)  {
+    .main {
+        margin-top: 140px;
+
+        &__boxes {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__box {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+        &__box2 {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+        &__box3 {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        &__nav {
+            margin-left: 70px;
+            margin-bottom: 40px;
+        }
+
+        &__tittle{ 
+            font-family: 'Space Mono', 'Arial', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.071
+        }
+        &__line {
+            position: absolute;
+            z-index: -1;
+            transform: rotate(90deg);
+            margin-left: -360px;
+            background-color: $main-light-grey;
+            border: 10px solid $main-light-grey;
+            width: 820px;
+            margin-top: 100px;
+            
+        }
+       
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .main {
+        max-width: 573px;
+     &__line {
+         display: none;
+     }
+   
+        &__box{
+            display: flex;
+            flex-direction: column;
+            width: 345px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        &__box2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 341px;
+        }
+        &__box3 {
+            display: flex;
+            flex-direction: column;
+            width: 345px;
+            margin-top: 80px;
+        }
+        &__tittle {
+            text-align: center;
+            font-family: 'Space Mono', 'Arial', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -0.892857px;
+            }
+        &__text {
+            font-family: 'Lexend Deca', 'Arial', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            width: 311px;
+        }
+        &__nav {
+            margin: 0;
+        }
+    }
+}

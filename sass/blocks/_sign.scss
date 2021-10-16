@@ -1,0 +1,111 @@
+.sign {
+    background-color: $main-dark;
+    background-image: url(./../img/footer-desktop-bg.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: right bottom;
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+.sign__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sign__main-title {
+    max-width: 415px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #ffffff;
+}
+.sign__main-links {
+    display: flex;
+}
+.sign__main-link{
+    text-decoration: none;
+}
+.sign__main-button{
+    display: flex;
+    background-color: $main-white;
+    border-radius: 4px;
+    align-items: center;
+    padding: 8px 15px 9px  16px;
+}
+.google-play{
+    margin-left: 18px;
+}
+.sign__main-inner-title {
+    margin: 0;
+    margin-left: 17.73px;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: $main-dark;
+}
+
+.appstore::before{
+    content: "Available on the";
+    display: block;
+    max-width: 92px;
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    max-width: 92px;
+    color: $main-dark;
+}
+.googleplay::before{
+    content: "Get it on";
+    display: block;
+    max-width: 92px;
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    max-width: 92px;
+    color: $main-dark;
+}
+
+// Tablet
+@media only screen and (max-width: 768px) {
+    .sign {
+        background-color: $main-dark;
+        background-image: url(./../img/footer-tablet-bg.png);
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        background-size: contain;
+    }
+    .sign__main{
+        flex-direction: column;
+    }
+    .sign__main-title{
+        text-align: center;
+    }
+    .sign__main-button{
+        padding: 8.3px 12px 6.43px 11.43px;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 450px) {
+    .sign {
+        background-color: $main-dark;
+        background-image: url(./../img/footer-mobile-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .sign__main-title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+    }
+}

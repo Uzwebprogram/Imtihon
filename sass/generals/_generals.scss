@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button1{
+    border: none;
+    background: $main-yellow;
+    border: 2px solid $main-yellow;
+    padding: 13px 26px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+
+
+    &:hover {
+        background: transparent;
+        border: 2px solid $main-yellow;
+        color: $main-yellow;
+    }
+}
+.header__right-btn {
+    color: $main-snow;
+    font-size: 15px;
+    font-weight: 700;
+}
+.button2{
+    color: $main-snow;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    background: $main-yellow;
+    border: 2px solid $main-yellow;
+    padding: 13px 26px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background: transparent;
+        border: 2px solid $main-yellow;
+        color: $main-yellow;
+    }
+}
