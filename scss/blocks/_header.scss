@@ -16,7 +16,7 @@
         align-items: center;
     }
 
-    .list {
+    &__list {
         display: flex;
         align-items: center;
 
@@ -66,7 +66,6 @@
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     .header {
         &__logo {
@@ -89,7 +88,7 @@
             transform: translateX(100%);
         }
 
-        .list,
+        &__list,
         &__right-btn {
             display: none;
         }
@@ -124,7 +123,7 @@
                 align-items: left;
                 text-align: left;
 
-                .button1 {
+                a {
                     color: white;
                     margin-left: 35px;
                     width: 100px;

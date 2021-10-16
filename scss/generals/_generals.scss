@@ -17,7 +17,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
 }
 
 .container {
@@ -27,7 +26,7 @@ body {
     padding-right: 15px;
 }
 
-.button1{
+.button {
     border: none;
     background: $main-yellow;
     border: 2px solid $main-yellow;
@@ -35,33 +34,18 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
 
-
-
-    &:hover {
-        background: transparent;
-        border: 2px solid $main-yellow;
-        color: $main-yellow;
+    a {
+        color: $main-snow;
+        font-size: 15px;
+        font-weight: 700;
     }
-}
-.header__right-btn {
-    color: $main-snow;
-    font-size: 15px;
-    font-weight: 700;
-}
-.button2{
-    color: $main-snow;
-    font-size: 15px;
-    font-weight: 700;
-    border: none;
-    background: $main-yellow;
-    border: 2px solid $main-yellow;
-    padding: 13px 26px;
-    transition: all 0.3s ease;
-    cursor: pointer;
 
     &:hover {
         background: transparent;
         border: 2px solid $main-yellow;
-        color: $main-yellow;
+
+        a {
+            color: $main-yellow;
+        }
     }
 }
