@@ -29,7 +29,7 @@ body {
   padding-right: 15px;
 }
 
-.button {
+.button1 {
   border: none;
   background: #FCB72B;
   border: 2px solid #FCB72B;
@@ -39,18 +39,34 @@ body {
   cursor: pointer;
 }
 
-.button a {
+.button1:hover {
+  background: transparent;
+  border: 2px solid #FCB72B;
+  color: #FCB72B;
+}
+
+.header__right-btn {
   color: #F2F5F9;
   font-size: 15px;
   font-weight: 700;
 }
 
-.button:hover {
-  background: transparent;
+.button2 {
+  color: #F2F5F9;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  background: #FCB72B;
   border: 2px solid #FCB72B;
+  padding: 13px 26px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.button:hover a {
+.button2:hover {
+  background: transparent;
+  border: 2px solid #FCB72B;
   color: #FCB72B;
 }
 
@@ -147,7 +163,7 @@ body {
           align-items: center;
 }
 
-.header__list {
+.header .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,7 +172,7 @@ body {
           align-items: center;
 }
 
-.header__list-item {
+.header .list-item {
   margin: 0 16px;
   font-style: normal;
   font-weight: bold;
@@ -166,11 +182,11 @@ body {
   line-height: 25px;
 }
 
-.header__list-item a {
+.header .list-item a {
   color: #939CAA;
 }
 
-.header__list-item a:hover {
+.header .list-item a:hover {
   color: #FCB72B;
 }
 
